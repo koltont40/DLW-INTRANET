@@ -32,3 +32,20 @@ This repository contains a static intranet homepage for Dixieland Wireless LLC. 
 ## Deployment
 
 Because the site is static, it can be hosted from any internal web server or bundled with your existing intranet hosting solution. Sync the `/assets` directory along with `index.html` to your internal server and update DNS/VPN routing so employees can reach the intranet securely.
+
+### Automated install and update scripts
+
+Two helper scripts are provided to streamline installation and future updates:
+
+```bash
+# Install to /opt/dlw-intranet (default target)
+scripts/install.sh
+
+# Install to a custom path
+scripts/install.sh /var/www/dlw-intranet
+
+# Update an existing deployment (defaults to /opt/dlw-intranet)
+scripts/update.sh
+```
+
+The install script copies the static assets to the target directory and creates a `config.env` template to store environment-specific URLs without editing the HTML directly. The update script syncs any repository changes into the deployment directory while preserving existing configuration files.
