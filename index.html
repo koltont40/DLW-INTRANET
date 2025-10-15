@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dixieland Wireless LLC Intranet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="branding">
+        <span class="logo" aria-hidden="true">DLW</span>
+        <div>
+          <h1>Dixieland Wireless LLC Intranet</h1>
+          <p class="tagline">Connect. Install. Support.</p>
+        </div>
+      </div>
+      <nav class="utility-nav" aria-label="Secondary navigation">
+        <a class="nav-link" href="#quick-links">Quick Links</a>
+        <a class="nav-link" href="#tech-install-portal">Tech Install Portal</a>
+        <a class="nav-link" href="#knowledge-base">Knowledge Base</a>
+        <a class="nav-link" href="#team">Team</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Welcome to the DLW Operations Hub</h2>
+          <p>
+            Your one-stop portal for site access details, installation workflows,
+            support documentation, and everyday tools that keep Dixieland
+            Wireless connected.
+          </p>
+          <div class="actions">
+            <a class="action-button" href="#tech-install-portal">
+              Open Tech Install Portal
+            </a>
+            <a class="action-button secondary" href="#announcements">
+              View Latest Updates
+            </a>
+          </div>
+        </div>
+        <aside class="hero-summary" aria-labelledby="hero-summary-title">
+          <h3 id="hero-summary-title">Today at a Glance</h3>
+          <dl>
+            <div>
+              <dt>Scheduled Installs</dt>
+              <dd id="install-count">12</dd>
+            </div>
+            <div>
+              <dt>Pending Site Access Requests</dt>
+              <dd id="access-count">5</dd>
+            </div>
+            <div>
+              <dt>Open Support Tickets</dt>
+              <dd id="ticket-count">8</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="quick-links" class="panel">
+        <div class="panel-header">
+          <h2>Quick Access</h2>
+          <div class="search">
+            <label class="sr-only" for="quick-search">Filter quick links</label>
+            <input
+              id="quick-search"
+              type="search"
+              placeholder="Filter resources by name"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="card-grid" id="quick-links-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="tech-install-portal" class="panel highlight">
+        <div class="panel-header">
+          <h2>Tech Install Portal</h2>
+          <p>
+            Manage installation projects, document site visits, and sync with the
+            Dixieland Wireless website for customer status updates.
+          </p>
+        </div>
+        <div class="portal-grid">
+          <article class="portal-card">
+            <h3>Launch Portal</h3>
+            <p>
+              Access the full install workflow application, track site surveys,
+              and update installation milestones directly from the field.
+            </p>
+            <a class="action-button" href="https://www.dixielandwireless.com/install-portal" target="_blank" rel="noopener">
+              Open Portal
+            </a>
+          </article>
+          <article class="portal-card">
+            <h3>New Installation Intake</h3>
+            <ul>
+              <li><a href="#" data-placeholder="true">Submit customer intake form</a></li>
+              <li><a href="#" data-placeholder="true">Assign field technician</a></li>
+              <li><a href="#" data-placeholder="true">Generate site access packet</a></li>
+            </ul>
+          </article>
+          <article class="portal-card">
+            <h3>Install Resources</h3>
+            <ul>
+              <li><a href="#" data-placeholder="true">Installation checklist</a></li>
+              <li><a href="#" data-placeholder="true">Site readiness guide</a></li>
+              <li><a href="#" data-placeholder="true">Customer handoff template</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="announcements" class="panel">
+        <div class="panel-header">
+          <h2>Announcements</h2>
+        </div>
+        <div class="timeline" id="announcement-timeline" aria-live="polite"></div>
+      </section>
+
+      <section id="knowledge-base" class="panel">
+        <div class="panel-header">
+          <h2>Knowledge Base</h2>
+          <div class="search">
+            <label class="sr-only" for="kb-search">Search knowledge base</label>
+            <input
+              id="kb-search"
+              type="search"
+              placeholder="Search articles and SOPs"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="kb-grid" id="kb-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="team" class="panel">
+        <div class="panel-header">
+          <h2>Team Directory &amp; Support</h2>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <h3>Operations</h3>
+            <p class="contact">operations@dixielandwireless.com</p>
+            <ul>
+              <li>Site access requests &amp; approvals</li>
+              <li>Vendor coordination</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <h3>Field Technicians</h3>
+            <p class="contact">installs@dixielandwireless.com</p>
+            <ul>
+              <li>Install scheduling &amp; dispatch</li>
+              <li>Equipment provisioning</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <h3>Support Desk</h3>
+            <p class="contact">support@dixielandwireless.com</p>
+            <ul>
+              <li>Portal access issues</li>
+              <li>Ticket escalations</li>
+            </ul>
+          </article>
+          <article class="team-card">
+            <h3>Emergency Hotline</h3>
+            <p class="contact">1-800-555-3479</p>
+            <ul>
+              <li>Network outages</li>
+              <li>Critical infrastructure alerts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="footer-year"></span> Dixieland Wireless LLC. Internal use only.</p>
+      <p>
+        Need help? <a href="mailto:helpdesk@dixielandwireless.com">Contact the helpdesk</a>.
+      </p>
+    </footer>
+
+    <div class="modal" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title" hidden>
+      <div class="modal-content" tabindex="-1">
+        <div class="modal-header">
+          <h2 id="login-modal-title">Portal Credentials</h2>
+          <button class="icon-button" type="button" data-close-modal aria-label="Close credentials dialog">×</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Access to external portals requires VPN connection and MFA.
+            Contact the support desk if you need credentials or permissions.
+          </p>
+          <ul class="credentials-list" id="credentials-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
